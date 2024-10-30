@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Bets</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-info-subtle">
+  <header class="fw-bold text-danger p-2">
+    <h1><i class="mdi mdi-basketball"></i> Sports Betting!</h1>
+    <hr>
+  </header>
+  <main class="container-fluid">
+    <section class="row g-4 text-center justify-content-center">
+      <div class="col-md-2">
+        <div class="card">
+          <h3 class="fw-bold pt-2"><i class="mdi mdi-cash text-success"></i> Bank:</h3>
+          <hr>
+          <p id="bank" class="fw-bold"><span></span></p>
+        </div>
+      </div>
+    </section>
+    <section class="row g-4 p-3 text-center justify-content-center">
+      <div class="col-md-5">
+        <div class="card pt-2">
+          <h4>Team 1:</h4>
+          <hr>
+          <div>
+            <p id="teamOneStarters" class="fs-3"></p>
+          </div>
+          <div class="p-3">
+            <button class="btn btn-danger" onclick="gamble(1, 50)">Bet $50</button>
+            <button class="btn btn-danger" onclick="gamble(1, 250)">Bet $250</button>
+            <button class="btn btn-danger" onclick="gamble(1, 1000)">Bet $1,000</button>
+            <button class="btn btn-danger" onclick="gamble(1, bank)">All In!</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card pt-2">
+          <h4>Team 2:</h4>
+          <hr>
+          <div>
+            <p id="teamTwoStarters" class="fs-3"></p>
+          </div>
+          <div class="p-3">
+            <button class="btn btn-info text-white" onclick="gamble(1, 50)">Bet $50</button>
+            <button class="btn btn-info text-white" onclick="gamble(1, 250)">Bet $250</button>
+            <button class="btn btn-info text-white" onclick="gamble(1, 1000)">Bet $1,000</button>
+            <button class="btn btn-info text-white" onclick="gamble(1, bank)">All In!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
